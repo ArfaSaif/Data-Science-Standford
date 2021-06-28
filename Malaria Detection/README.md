@@ -14,5 +14,9 @@ It is a continous dataset instead of discrete dataset. Similar to ECG dataset. A
 
 Determine distribution of Malaria in real time. Build a device that will be deployed over continent of Africa, that will automatically detect the mosquitos. The device uses a laser beam at the entrance of the box, if a mosquito flies into the box, the laser beam will detect it and generate time series data.
 
+<img width="663" alt="image" src="https://user-images.githubusercontent.com/48233453/123683890-c1605f80-d81a-11eb-8521-1e8f9385d4ef.png">
+
+
+Machine learning Model can learn the time series data and classify the species of the mosquitoes. Train a classifier to understand type of mosquito that exists.
 
 
