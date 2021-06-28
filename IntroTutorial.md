@@ -194,6 +194,12 @@ To change the column names of the first 3 columns
 
 
 
+## Strings
+
+> paste(var1, var2, sep=" " )
+
+Concatenates strings
+
 
 
 
