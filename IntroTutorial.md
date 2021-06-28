@@ -21,12 +21,18 @@ Built-in function (no special library, their built in)
 > log10(100) (default base is e)
 
 
+
+
 ## Assignment
 
 > z <- x + y
 
+
+
 ## Sequences
 > seq(1,5, by=.5) - from 1.0 to 5.0 incrementing by 0.5 [default is 1 and will include the final number]
+
+
 
 ## Vectors
 > v1 = c(6,5,4,3,2,1)
@@ -38,10 +44,13 @@ Built-in function (no special library, their built in)
 > v1 + v2
 - will do element wise addition
 
+
 ## Other Functions
 
 > rep(1,5) = 1 1 1 1 1
 - will repeat a number multiple times
+
+
 
 ## Built-in Functions for Vectors
 > max(v3); min(v3)
@@ -63,6 +72,8 @@ standard deviation of elements in v3
 
 variance of numbers in the vector
 
+
+
 ## Other Built-in Functions
 > as.character(2) = "2"
 
@@ -77,6 +88,8 @@ string converted to number - used to convert strings to numbers in spread sheets
 
 - can only have the same type of variables
 - otherwise will store it as a string
+
+
 
 ## Data Elements
 - select range of elements
@@ -129,6 +142,7 @@ d = c(5,6,7)
 
 * Access values in columns values *
 > students$heights
+
 
 
 ## Built - in Data Frames for Training Purposes
