@@ -1,7 +1,7 @@
 
 
 
-## Intro to R Programming Tutorial
+## R Programming Tutorial for Data Science
 
 Basic Data Analysis
 
@@ -40,8 +40,20 @@ Built-in function (no special library, their built in)
 
 ## Other Functions
 
-rep(1,5)
+> rep(1,5) = 1 1 1 1 1
 - will repeat a number multiple times
+
+## Built-in Functions for Vectors
+> max(v3); min(v3)
+> length(v3)
+> mean(v3)
+> sd(v3)
+> var(v3)
+
+## Other Built-in Functions
+> as.character(2) = "2"
+> as.numeric("2") = 2
+> as.character(v3) = "16" "14" "12" "10" "8" "6"
 
 
 
