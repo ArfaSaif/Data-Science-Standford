@@ -109,9 +109,11 @@ string converted to number - used to convert strings to numbers in spread sheets
 
 
 
-## Data Frames
+## Data Frames for Storing Data sets
 
 A data frame is used for storing data tables. It is a list of vectors of *equal* length.
+Seperate section in the RHS of R Studio. with 3 obj means the number of rows and 3 variables means number of columns.
+
 
 % define 3 vectors
 a=c("David", "Eamonn", "Jen")
@@ -121,9 +123,35 @@ d = c(5,6,7)
 % integrate the vectors into the data frame
 % the columns are names, grades, and heights
 
+
+
 > students = data.frame(names = a, grades = b, heights = d)
 
+* Access values in columns values *
 > students$heights
+
+
+## Built - in Data Frames for Training Purposes
+
+We use built-in data frames in R as training examples.
+For instance, here is a built-in data frame in R called mtcars (in datasets package, checkmark to load the database).
+
+% to load library use library(datasets)
+
+> mtcars
+
+
+- 32 objs(rows or instances) and 11 variables( number of columns)
+
+
+## Access Data from the Data Frame
+
+Two ways
+
+1) Use row and column m[rownum, colnum] where m is the dataframe. Rows and columns start at 1.
+2) Use row name and column name m["Range Rover", "gears"] using strings
+
+
 
 
 
