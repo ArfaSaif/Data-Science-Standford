@@ -45,17 +45,22 @@ Built-in function (no special library, their built in)
 
 ## Built-in Functions for Vectors
 > max(v3); min(v3)
+
 max element; min element of vector
 > length(v3)
+
 number of elements in a vector
 
 > mean(v3)
+
 average of elements in v3
 
 > sd(v3)
+
 standard deviation of elements in v3
 
 > var(v3)
+
 variance of numbers in the vector
 
 ## Other Built-in Functions
@@ -72,6 +77,55 @@ string converted to number - used to convert strings to numbers in spread sheets
 
 - can only have the same type of variables
 - otherwise will store it as a string
+
+## Data Elements
+- select range of elements
+> v3[1:3]
+
+
+> if go beyond, some compilers will give errors otherwise will give NA
+
+- exculde one element but select all elements
+> vs[-3]
+
+
+- will only overwrite if reassign
+
+- slicing: including only part of the object
+> v3[c(1,2,5)]
+
+
+- include some of the elements, want to only select element 1,2 and 5 from v3
+- can put a minus sign infront of those elements to exclude those elements
+
+
+- select elements based on logical operator
+> vs[v3>3]
+
+
+- select all elements that meet this condition
+- all elements greater than 3
+- if just write v3> 10, will give a boolean of all the comparisons
+
+
+
+## Data Frames
+
+A data frame is used for storing data tables. It is a list of vectors of equal length.
+
+a=c("David", "Eamonn", "Jen")
+b = c(100,98,99)
+d = c(5,6,7)
+
+> students = data.frame(names = a, grades = b, heights = d)
+
+> students$heights
+
+
+
+
+
+
 
 
 
