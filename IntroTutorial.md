@@ -45,15 +45,34 @@ Built-in function (no special library, their built in)
 
 ## Built-in Functions for Vectors
 > max(v3); min(v3)
+max element; min element of vector
 > length(v3)
+number of elements in a vector
+
 > mean(v3)
+average of elements in v3
+
 > sd(v3)
+standard deviation of elements in v3
+
 > var(v3)
+variance of numbers in the vector
 
 ## Other Built-in Functions
 > as.character(2) = "2"
+
+
 > as.numeric("2") = 2
+string converted to number
+
 > as.character(v3) = "16" "14" "12" "10" "8" "6"
+
+> vector of strings vs = c( "mohammad", "bob", "juliana")
+
+- can only have the same type of variables
+- otherwise will store it as a string
+
+
 
 
 
