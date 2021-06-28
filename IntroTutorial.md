@@ -31,13 +31,17 @@ Built-in function (no special library, their built in)
 ## Vectors
 > v1 = c(6,5,4,3,2,1)
 
--- c stands for concatenation
--- indexes start at 1 :(
+- c stands for concatenation
+- indexes start at 1 :(
 <img width="116" alt="image" src="https://user-images.githubusercontent.com/48233453/123689608-64b47300-d821-11eb-8904-325056f7c918.png">
 
 > v1 + v2
--- will do element wise addition
+- will do element wise addition
 
+## Other Functions
+
+rep(1,5)
+- will repeat a number multiple times
 
 
 
