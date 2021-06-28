@@ -63,7 +63,8 @@ variance of numbers in the vector
 
 
 > as.numeric("2") = 2
-string converted to number
+
+string converted to number - used to convert strings to numbers in spread sheets
 
 > as.character(v3) = "16" "14" "12" "10" "8" "6"
 
