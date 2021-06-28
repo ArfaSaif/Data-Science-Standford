@@ -152,6 +152,17 @@ Two ways
 2) Use row name and column name m["Range Rover", "gears"] using strings
 
 
+## Data Frame Functions
+
+> nrow(mtcars)
+
+Number of rows in the data frame
+
+> ncol(mtcars)
+
+Number of cols in the data frame
+
+
 
 
 
