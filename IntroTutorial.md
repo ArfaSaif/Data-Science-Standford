@@ -154,6 +154,8 @@ Two ways
 
 ## Data Frame Functions
 
+For dynamic programming:
+
 > nrow(mtcars)
 
 Number of rows in the data frame
@@ -163,6 +165,18 @@ Number of rows in the data frame
 Number of cols in the data frame
 
 
+> colnames(m)
+
+Get the column names strings
+% can access using colnames(m)[3]
+
+> colnames(m)[3] = "newname"
+
+To change the col names of the data frame
+
+> colnames(m)[1:3] = c("what1", "what2", "what3")
+
+To change the column names of the first 3 columns
 
 
 
