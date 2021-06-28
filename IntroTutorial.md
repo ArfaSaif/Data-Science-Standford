@@ -111,11 +111,15 @@ string converted to number - used to convert strings to numbers in spread sheets
 
 ## Data Frames
 
-A data frame is used for storing data tables. It is a list of vectors of equal length.
+A data frame is used for storing data tables. It is a list of vectors of *equal* length.
 
+% define 3 vectors
 a=c("David", "Eamonn", "Jen")
 b = c(100,98,99)
 d = c(5,6,7)
+
+% integrate the vectors into the data frame
+% the columns are names, grades, and heights
 
 > students = data.frame(names = a, grades = b, heights = d)
 
