@@ -30,7 +30,7 @@ mtcars$mpg
 # find the peak in the plot, ranges that mpg exist
 
 
-ggplot(mtcars,  aes(mpg)) + geom_histogram(bins = 10) 
+ggplot(mtcars,  aes(mpg)) + geom_histogram(bins = 10, color ="red", fill="green") 
 
 ## add to this
 
