@@ -124,7 +124,7 @@ string converted to number - used to convert strings to numbers in spread sheets
 
 ## Data Frames for Storing Data sets
 
-A data frame is used for storing data tables. It is a list of vectors of *equal* length.
+A data frame is used for storing 2D data tables. It is a list of vectors of *equal* length.
 Seperate section in the RHS of R Studio. with 3 obj means the number of rows and 3 variables means number of columns.
 
 
