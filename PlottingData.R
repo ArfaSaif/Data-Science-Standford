@@ -30,7 +30,14 @@ mtcars$mpg
 # find the peak in the plot, ranges that mpg exist
 
 
-ggplot(mtcars,  aes(mpg)) + geom_histogram(bins = 10, color ="red", fill="green") 
+ggplot(mtcars,  aes(mpg)) + geom_histogram(bins = 10, color ="red", fill="green") +
+theme_bw() + ggtitle("my first histogram");
+
+## use pluses to add attributes to the plot
+
+## theme_bw removes grey background
+
+
 
 ## add to this
 
