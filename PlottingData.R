@@ -44,4 +44,5 @@ theme_bw() + ggtitle("my first histogram") + ylim(0,100) + xlab("X AXIS LABEL");
 
 ## add to this
 
-
+##Scatter plots: used for 2-D, two variables, and outliers, distributions
+ggplot(mtcars, aes(mpg, wt)) + geom_point();
