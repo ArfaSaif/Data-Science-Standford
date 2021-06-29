@@ -4,5 +4,7 @@ Notes I've taken for class and projects I've worked on.
 
 
 
-Questions on quiz i got wrong
+
+
+Questions on quiz i messed up:
 - Data mining doesn't always require data cleaning
