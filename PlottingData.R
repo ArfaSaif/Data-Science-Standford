@@ -31,7 +31,10 @@ mtcars$mpg
 
 
 ggplot(mtcars,  aes(mpg)) + geom_histogram(bins = 10, color ="red", fill="green") +
-theme_bw() + ggtitle("my first histogram");
+theme_bw() + ggtitle("my first histogram") + ylim(0,100) + xlab("X AXIS LABEL");
+
+# ylim and x lim to ignore outliers
+
 
 ## use pluses to add attributes to the plot
 
