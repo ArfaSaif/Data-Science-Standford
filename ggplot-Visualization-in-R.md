@@ -1,2 +1,2 @@
-#ggplot and Visualization in R
+*ggplot and Visualization in R*
 
