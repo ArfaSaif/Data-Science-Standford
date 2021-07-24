@@ -24,3 +24,7 @@ IoT and sensors leverage time series algorithms to save lives, money and make th
 - tranform audio file to time series - mfcc algo and applying data mining techniques
 
 # Time Series Data is the new Big Data
+
+# Data Cleaning
+
+![image](https://user-images.githubusercontent.com/48233453/126874873-db570878-e459-48c0-9330-1dccf2da2ba9.png)
