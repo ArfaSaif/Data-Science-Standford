@@ -19,4 +19,18 @@ Correlation is not the same as causation. However, measuring correlation between
 
 
 
+![image](https://user-images.githubusercontent.com/48233453/126875869-19936792-a176-4065-a12c-f534e77d52b0.png)
+- outlier skews correlation score
+-  best way to understand correlation is visualy not quantifying correlation score
 
+![image](https://user-images.githubusercontent.com/48233453/126875896-3392bf3e-4040-49fd-9249-ad516d743cb8.png)
+
+![image](https://user-images.githubusercontent.com/48233453/126875904-577da958-f5ee-444a-97c5-6c13af678821.png)
+
+- no causation but there is correlation
+![image](https://user-images.githubusercontent.com/48233453/126875918-8f7723a6-2ee6-4138-bfba-8f8e4c76766e.png)
+- correlation is not the same as causation
+
+
+
+- outlier skews correlation score
