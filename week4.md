@@ -19,5 +19,8 @@ IoT and sensors leverage time series algorithms to save lives, money and make th
 ![image](https://user-images.githubusercontent.com/48233453/126874267-6d97b290-9dc0-44dd-a02a-c1f1529d074b.png)
 
 
-- for data mining 
-- 
+- time series data used in different modalities in data mining 
+- transform video to time series - and analyzing repeating patternsin the time serieos, possible to find the repeating segments
+- tranform audio file to time series - mfcc algo and applying data mining techniques
+
+# Time Series Data is the new Big Data
