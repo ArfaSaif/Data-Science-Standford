@@ -26,5 +26,8 @@ IoT and sensors leverage time series algorithms to save lives, money and make th
 # Time Series Data is the new Big Data
 
 ## Data Cleaning
+- Motif Discovery: discovering repeating patterns that occur most frequestly in time series. 
+- Rule Discovery: finding rules in order to mkae short term predictions
+- Anomaly Detectin : find abornmal behaviour in time series
 
 ![image](https://user-images.githubusercontent.com/48233453/126874873-db570878-e459-48c0-9330-1dccf2da2ba9.png)
