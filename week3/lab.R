@@ -61,3 +61,4 @@ myData <- LifeCycleSavings[-c(indexHighDDPI), ]
 # Create histogram for the pop75 column
 
 ggplot(LifeCycleSavings, aes(pop75) ) + geom_histogram(bins=10) + theme_bw()
+ggplot(LifeCycleSavings, aes(pop15, pop75)) + geom_point()
