@@ -67,4 +67,21 @@ CODE:
 % ggplot(newMPG, aes(class, hwy, color=class)) + geom_jitter()+theme_bw()
 <img width="424" alt="image" src="https://user-images.githubusercontent.com/48233453/129922644-06dbd85d-e677-474c-9853-4ae35e658480.png">
 
+## Color Labels
+ggplot(mpg,aes(fl,fill=class)) + geom_bar()
+- fill in the bar graph with the class color
+- <img width="379" alt="image" src="https://user-images.githubusercontent.com/48233453/129923081-29cfb9fc-e945-419b-bd43-a80ef318d348.png">
+
+# Heat map
+<img width="368" alt="image" src="https://user-images.githubusercontent.com/48233453/129923135-83d61ee8-3151-41cb-bf54-ac0ecc772c20.png">
+- where is the maximum and minium for that z value
+
+
+# Summary
+<img width="367" alt="image" src="https://user-images.githubusercontent.com/48233453/129924857-c856beb8-2e05-4a12-8ed3-2325d12c5324.png">
+
+# Interactive plots
+- use plotly library
+- <img width="297" alt="image" src="https://user-images.githubusercontent.com/48233453/129925127-67640277-2146-4be9-97d8-62f41200eae8.png">
+
 
