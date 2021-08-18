@@ -56,3 +56,8 @@ indexHighDDPI=which.max(myData$ddpi)
 myData <- LifeCycleSavings[-c(indexHighDDPI), ]
 indexHighDDPI=which.max(myData$ddpi)
 myData <- LifeCycleSavings[-c(indexHighDDPI), ]
+
+
+# Create histogram for the pop75 column
+
+ggplot(LifeCycleSavings, aes(pop75) ) + geom_histogram(bins=10) + theme_bw()
