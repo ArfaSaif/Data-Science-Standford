@@ -61,4 +61,6 @@ myData <- LifeCycleSavings[-c(indexHighDDPI), ]
 # Create histogram for the pop75 column
 
 ggplot(LifeCycleSavings, aes(pop75) ) + geom_histogram(bins=10) + theme_bw()
-ggplot(LifeCycleSavings, aes(pop15, pop75)) + geom_point()
+ggplot(LifeCycleSavings, aes(pop15, pop75)) + geom_point(color = "green")
+# color inside of aes need to put a column name aes(pop75, pop15, color=categorical variable)
+# assign a different color for different values of the column
