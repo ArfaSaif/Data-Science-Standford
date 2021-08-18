@@ -27,13 +27,44 @@ ggplot(mpg, aes(cty,hwy)) + geom_point(color="green", size=7, alpha = 0.1)
 - can visualize a distribution using historgram, but we need to compare distributions
 
 CODE:
-- library(ggplot2)
+% library(ggplot2)
 - 
-- mpg = mpg # hwy mpg is a column called hwy, the class of the car is in the class column
-- newMPG = rbind(mpg, mpg, mpg, mpg, mpg, mpg)
-- newMPG$hwy = newMPG$hwy + runif(nrow(newMPGS), in = 0, max = 1)
+% mpg = mpg # hwy mpg is a column called hwy, the class of the car is in the class column
+- want to increase the dataset so that there are more datapoints
+- # will create a larger dataset that is called newMPG and in this dataset we are binding and replicating the mpg dataset multiple times to make a larger dataset for visualizing purposes- 200 rows become 1000 rows
+% newMPG = rbind(mpg, mpg, mpg, mpg, mpg, mpg)
+
+- runif is a random function that generates fandom numbers using it to generate some randomness to the hwy column so we dont have the same datapoints replicating, just adding some randomness to that compute
+% newMPG$hwy = newMPG$hwy + runif(nrow(newMPGS), in = 0, max = 1)
+
+- can use a scatter plot
+- class on the x-asis and hwy on the y axis
+% ggplot(newMPG, aes(class, hwy, color=class)) + geom_point()+theme_bw()
+
+- not ideal plot
+- can use to find max or min
+- <img width="410" alt="image" src="https://user-images.githubusercontent.com/48233453/129914195-1dcbfd05-74b9-4ded-948a-b948bf05e6b5.png">
+- we have overlapping datapoints
+- theres datapoints ontop of each other, cannot see thier distribution, cannot see how many are there, there could be a bell curve so we cannot tell 
+
+- use gitter plot
+- on the x axis adds some random noise on the x values, instead of plotting all the points on the y axis, it adds some random noise on the x-axis, expands the x-axis instead of putting them all on one line
+- it will be spread out, you can see how many datapoints falling in each y value
+
+% ggplot(newMPG, aes(class, hwy, color=class)) + geom_jitter()+theme_bw()
+<img width="475" alt="image" src="https://user-images.githubusercontent.com/48233453/129914676-6b9db48c-62a0-4f58-b746-964492caa497.png">
 
 
+- use violin plot
+- shwos shape of the distribution for each of the classes of the cars
+- <img width="464" alt="image" src="https://user-images.githubusercontent.com/48233453/129914975-7552bc9d-b4d9-4f52-aa8f-5c290eb2b3c7.png">
+- its a flipped histogram that is mirrorred
 
+- highest average of mpgs
+- want to estimate the average of the mpgs for each of the classes
+- all these plots were missing the statistical information here
+- use box plot, can cpmpare the medians and widest distribution, size of the box shows the desnity of the distribution, 
+% ggplot(newMPG, aes(class, hwy, color=class)) + geom_jitter()+theme_bw()
+<img width="424" alt="image" src="https://user-images.githubusercontent.com/48233453/129922644-06dbd85d-e677-474c-9853-4ae35e658480.png">
 
 
