@@ -30,7 +30,7 @@ CODE:
 % bultin-in function complete.cases -- will give FALSE if those rows are not complete: can also use library(dplyr) to deal with missing rows and outliers
 % ind = complete.cases(dataframe)
 % cleanData = airquality[-ind,]
-# Detect outliers - wil skew your outliers
+# Detect outliers - will skew your statistics
 % can use visual or statistical approach
 % explre the dataset and identify outliers using visualization
 % library(ggplot2)
