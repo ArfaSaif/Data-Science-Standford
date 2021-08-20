@@ -17,7 +17,9 @@
 
 <img width="446" alt="image" src="https://user-images.githubusercontent.com/48233453/130181773-318d71bf-e3ff-4752-9448-b39ecf946aa7.png">
 - want to predict mpg using another variable
+
 % ggplot(mtcars, aes(wt,mpg)) + geom_point(size=7) + theme_bw()
+
 - fit a linear line, linear line will help to predict mpg from the other vairable
 - **assumes a relation between wt and mpg is linear**
 <img width="425" alt="image" src="https://user-images.githubusercontent.com/48233453/130181940-fcb79c8f-c1c4-4b9b-bb65-19bea007c44b.png">
@@ -34,6 +36,7 @@
 
 **Train and test a linear regression model in R**
 **Predict mpgs in the mtcas dataset**
+
 % install.packages("caret")
 % library(caret)
 % chucnk of data we need, all rows, just those columns
@@ -51,6 +54,7 @@ Four steps:
 
 % training = mtcars[(seq(1 , nrow(mtcars), 2), c("mpg,"wt")]
 - start from 1 and skip by 2 
+
 % test = mtcars[(seq(2 , nrow(mtcars), 2), c("mpg,"wt")]
 - there will not be any overlap
 
@@ -75,25 +79,32 @@ train is a builtin function, that takes in the column name for the target variab
 - measure metrics to figure out which model is better, can say r2 > 0.8
 - To measure for linear regression:
 - **RMSE** =  sqrt(mean(predictedMPGs - real)2))
+
 % RMSE(predictedMPGsting$mpg) 
+
 - compare the actual value to the predicted
 - not a good metric becuase RMSE can be anywhere from 0 to infinite, can be use for comparisons for different models, if lower then better fitting model
 
 - **R-SQUARE (R1)**
+
 % R2(predictedMPGS, test$mpg)
+
 - will give you a number 0 and 1
 - the value gives acuraccy
 - no acceptable value, its just a range of numbers, can be used to compare models
 
  - **mean of absolute errors** MSE
 - mean(abs(predictedMPGs - test$mpg))
-- MAE(predictedMPG, test$mpg)
+
+
+% MAE(predictedMPG, test$mpg)
 
 - this is a deterministic model - so should see the same result each time
 # Multlinear Regression
 
 % training = mtcars[(seq(1 , nrow(mtcars), 2), c("mpg,"wt", "qsec")]
 - start from 1 and skip by 2 
+
 % test = mtcars[(seq(2 , nrow(mtcars), 2), c("mpg,"wt", "qsec")]
 
 - use multiple features to predict one column - a 3d shape that will be trained to fit the datapoints
@@ -101,6 +112,7 @@ train is a builtin function, that takes in the column name for the target variab
 - decision tree - random forest are a population of those subtrees
 - random forest has the best performance so far
 - feature select will impact the accuracy of the model
+- to check for overfitting - need to test the model on real data and compare the accuracy for the model to check if it overfitted, splitting the data, the cross validation will help you to prevent overfitting
 # Predictive Accracy
 
 # Predictive Modeling Flow
