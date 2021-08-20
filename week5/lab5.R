@@ -85,4 +85,24 @@ as.numeric(predictedMPGs)
  RMSE(predictedPrices, test$price) 
  
  #######
- 
+
+# clean datasets - focus on each of the columns -
+# use builtin functions are dplyr - will automatially look at each of the columns and look at the mean and std and remove outliers
+# can use boxplot to count for each column 
+# can write a script
+
+# find the best fitting model -> the highest r^2, lowest error,
+
+# confusion matrix -> matrix for false positive, false negative, depends on the application
+# depends on the metrics - accuracy
+
+
+# problem with the outlier, problem with the dataset, have some limits if have domain knowledge
+# use some solution, average and std +- 2 std for normal distribution - extreme outliers
+
+# more balanced dataset then a imbalanced dataset happens in classification problems
+
+
+
+
+
