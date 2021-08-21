@@ -112,7 +112,7 @@ catergorize the last column
 
 training and testing 50 iterations of the same model, boostraping 50 times, by using 50 different splits of training and test, measure the accuracy
 
-%train_control <- trainControl(method="boot", number=50
+%train_control <- trainControl(method="boot", number=50)
 
 train the model, downselect a subsequence of the dataset
 
@@ -135,8 +135,13 @@ second line: create the plot for use
 <img width="651" alt="image" src="https://user-images.githubusercontent.com/48233453/130311913-7caef8f6-a2a1-4c54-8a1c-db2176334aa2.png">
 
 
+boxplot - since doing 10 iterations and will show the median of those algorithms
 
+can use k fold crossvalidation, and repeated
 
+% train_control <- trainControl(method="reapeatedcv", number=10, repeat=5)
+
+50 models
 
 # Readings
 Feature Selection with the Caret R Package by Jason Brownlee (Machine Learning Mastery, September 22, 2014) (Links to an external site.)
