@@ -143,6 +143,10 @@ can use k fold crossvalidation, and repeated
 
 50 models
 
+# Model Complexity
+dont want too complex , too many features or too less features, depends on the dataset
+<img width="249" alt="image" src="https://user-images.githubusercontent.com/48233453/130312694-92d0ead2-f76d-4697-a919-4c465424fa4c.png">
+
 # Readings
 Feature Selection with the Caret R Package by Jason Brownlee (Machine Learning Mastery, September 22, 2014) (Links to an external site.)
 
