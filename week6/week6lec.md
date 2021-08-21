@@ -110,6 +110,8 @@ data science virutal machine on gpus, gpu computing is popular way of trning ima
 % f1-score
 % kappa
 
+<img width="998" alt="image" src="https://user-images.githubusercontent.com/48233453/130307960-3e52a883-62b7-48fc-b519-3ea76b536744.png">
+
 <img width="935" alt="image" src="https://user-images.githubusercontent.com/48233453/130307863-6f3bdce5-535a-410f-afdd-f2aef1019d56.png">
 <img width="1019" alt="image" src="https://user-images.githubusercontent.com/48233453/130307883-c42b601e-6868-4fb0-868c-141cc88da4da.png">
 
