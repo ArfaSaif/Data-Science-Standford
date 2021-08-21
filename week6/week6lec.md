@@ -93,7 +93,7 @@ data science virutal machine on gpus, gpu computing is popular way of trning ima
 
 % model = train (Species ~., training, method = "kknn")
 % test the model
-% predictedSpecies = predict(model, testing)
+% predictedSpecies = as.character(predict(model, testing))
 % measure accuracy of predictions
 % RMSE and R2 not in categorical
 % accuracy of the model, checking how many are equal to the real
@@ -109,6 +109,10 @@ data science virutal machine on gpus, gpu computing is popular way of trning ima
 % recall
 % f1-score
 % kappa
+
+<img width="935" alt="image" src="https://user-images.githubusercontent.com/48233453/130307863-6f3bdce5-535a-410f-afdd-f2aef1019d56.png">
+<img width="1019" alt="image" src="https://user-images.githubusercontent.com/48233453/130307883-c42b601e-6868-4fb0-868c-141cc88da4da.png">
+
 
 # imbalanced classification - hard to get balanced datasets
 % just given the accuracy can you say if the model is doing a good job or not, or a meaningful classification or not
