@@ -70,7 +70,26 @@ In order to make accurate predictions in regression or classification, you need 
 
 Many models are irreproducable because those model have some randomeness involved in them when training implementation such as random forest or neural networks. Reapted K-Fold Cross Validation will make the accuracy independent of the model randomness.
 
+# storing data tools
+hadoop and spark
 
+# sampling
+- 10% of samples - when i do the sampling the sample function, use replace parameter - when to use true or false, you can repeatedly use the same samples - when the sample size is not big enough, how do we choose between two - if large then just want to subsample but for smaller datasets we have to ue replacement equal to true --== upsampling since using the same datapoints alow time, replications in training and test - yes can cause overfitting, its safer to set it to false - default is false - better not to set it to true - chance of overfitting - downsides of using a smaller datasets
+
+# Feature Selection with the Caret R package
+- use machine learning mastery link to find the subset of features that are the most important for training the models, varImp(model)
+- importance of each of the features depends on the model you want to train
+- selected subset of features depends on the type of model 
+- need to know the model type and the target 
+- this is supervised feature selection
+- unsuperivsed feature selection you dont need to know the model algorithm or the target variable - will tell you which features are good representations of the dataset independent of the model you want to train
+- unsupervised isnt as good as superivsed since supervised you are looking at a select target variable
+- classify sensors to a classification
+- videos: frame by frame bounding box then render the frames together
+- for every modality of data there are different methods, algorithms, distance metrics 
+- convert from one modality to another - speech audio files to time series data using mfcc algorithms 
+# Comprehensive Analysis of Models
+- 
 
 
 # Readings
