@@ -98,7 +98,37 @@ data science virutal machine on gpus, gpu computing is popular way of trning ima
 % RMSE and R2 not in categorical
 % accuracy of the model, checking how many are equal to the real
 
-% accuracy == predictedPecies == testing$Species
+% accuracy = predictedSPecies == testing$Species
+-> gives back TRUE or FALSE so count the number of trues
+-> sum it / nrows
+
+% accuracy = sum(predictedSPecies == testing$Species) / nrow(testing)
+
+% the accuracy of this model is 96%
+% precision
+% recall
+% f1-score
+% kappa
+
+# imbalanced classification - hard to get balanced datasets
+% just given the accuracy can you say if the model is doing a good job or not, or a meaningful classification or not
+
+% no because the data could be imbalanced - 
+% dogs: 90 and cats: 10 images for dogs and cats acuraccy will be 90%
+
+% my model is going to predict dogs, the reason you got good accuracy was because imbalanced dataset == i
+
+# solutions
+% downsample the larger class
+% upsamle the smaller class
+% synthesize instances and add thme to the smaller class
+% use cluster like k-means to upsample the smaller class
+# use other accuracy metrics: f1-score and kappa - indepnedent from the imbalance problem - kappa is high is good regardless of imbalance
+
+% fraud detection in banking transactions - 
+% 
+
+
 48:16
 
 
