@@ -128,7 +128,10 @@ data science virutal machine on gpus, gpu computing is popular way of trning ima
 % fraud detection in banking transactions - 
 % 
 
+# distance measures in Time Series Data
+- DTW ( Dynamic Time Warping)
+- Euclidean
 
-48:16
+
 
 
