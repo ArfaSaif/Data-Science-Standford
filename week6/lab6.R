@@ -22,7 +22,8 @@ predicted = predict(model, testing)
 accuracy = sum(predicted ==testing$X1) / nrow(testing)
 accuracy
 
-
+> accuracy
+[1] 0.9869565
 
 
 
@@ -45,7 +46,8 @@ predicted = predict(model, testing)
 accuracy = sum(predicted ==testing$X1) / nrow(testing)
 accuracy
 
-
+> accuracy
+[1] 0.9858696
 
 # use as.character or as.factor to change the numeric number into categorical
 # different columns are the frequencies of different words in the email
