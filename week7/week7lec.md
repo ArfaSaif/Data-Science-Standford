@@ -89,7 +89,53 @@ hadoop and spark
 - for every modality of data there are different methods, algorithms, distance metrics 
 - convert from one modality to another - speech audio files to time series data using mfcc algorithms 
 # Comprehensive Analysis of Models
-- 
+- data splitting isnt the most efficient way for training and testing models because the accuracy depends on how you split the data, thats a major problem of data splitting
+- we want to learn other metholodigies for analysing 
+
+
+#1 Boot strap
+
+#2 k-fold cross validation
+
+#3 repeated k-fold cross validation
+
+
+% comprehnsive analysis of mdoels
+% compare mulitple models and pick the best one
+
+% library(caret)
+% spam = read.csv("spambase.csv", header= FALSE) % CONSIDERING THE FIRST AS NOT LABELS
+
+catergorize the last column
+
+% spam$ v58 = as.factor(spam$v58)
+
+training and testing 50 iterations of the same model, boostraping 50 times, by using 50 different splits of training and test, measure the accuracy
+
+%train_control <- trainControl(method="boot", number=50
+
+train the model, downselect a subsequence of the dataset
+
+% spam = spam[seq(1, nrow(spam), 20,]
+% model1 <- train(v58~., spam, trControl=train_control, method="rf")
+
+its spliting the data into train and test, its measuring the accuracy and kappa score, doing this for 10 different splits, 10 values accuracy metrics
+
+% model2 <- train(v58~., spam, trControl=train_control, method="rf")
+% model3 <- train(v58~., spam, trControl=train_control, method="svmPoly")
+
+
+
+first line : wrappoing all the models you trained into a resampled module, you need to label each of the model you have trained, label is the name that will show up on the plot
+second line: create the plot for use
+% allModels = resamples ( list (NearestNeighbour = m1, RandomForst = m2, SVM=m3))
+% bwplot(allModels, scales = list(relation = "free"))
+
+
+<img width="651" alt="image" src="https://user-images.githubusercontent.com/48233453/130311913-7caef8f6-a2a1-4c54-8a1c-db2176334aa2.png">
+
+
+
 
 
 # Readings
