@@ -1,4 +1,7 @@
 
+# Data Scraping
+
+
 # Shiny:Interactive Web apps and RSelinium 
 - RSelinium is the R toolbox to interact with Selinium (originally in Java)
 # WebScraping in R
@@ -71,3 +74,27 @@ for(i in 1:100)
 
 
 % chromeVersions=binman::list_versions(
+
+# Shiny to make Web Apps
+
+- used for web applications in R
+- go to Gallery examples
+- need to make server.R and ui.R scripts
+- install shiny package
+- Run App on RStudio
+
+in UI.r
+- <img width="329" alt="image" src="https://user-images.githubusercontent.com/48233453/130372610-33b53ecb-b932-4f95-9ae0-ee9877370e5a.png">
+
+first is the value return, later in the code can say if input == "Ozone"
+
+in server.R
+
+<img width="462" alt="image" src="https://user-images.githubusercontent.com/48233453/130372731-b1dc8662-c04e-4760-bc75-698ae45f5f64.png">
+
+- use input, is a global variable in Shiny $ will show all the selectInput options
+- aes_string to convert to strings since those are strings
+
+# To host web application
+- install shiny server and create PC TO HOST WEB APPLICATION
+- pass url who want to visualize datasets 
