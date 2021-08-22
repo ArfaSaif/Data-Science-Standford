@@ -182,7 +182,9 @@ Here is a nice tutorial on applying Apriori on the Titanic data set in R.
 # Association Rule Mining
 - recommendation systems, retail analysis
 
-% 
+% Association Rule Learning and the Apriori Algorithm by Wesley (R-bloggers, September 26, 2012) (Links to an external site.)
+Here is a more detailed analysis on the Apriori algorithm in R.
+https://www.r-bloggers.com/2012/09/association-rule-learning-and-the-apriori-algorithm/
 
 # Web Scraping in R
 
