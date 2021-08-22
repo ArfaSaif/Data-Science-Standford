@@ -190,4 +190,5 @@ https://www.r-bloggers.com/2012/09/association-rule-learning-and-the-apriori-alg
 
 # Lab
 
+<img width="471" alt="image" src="https://user-images.githubusercontent.com/48233453/130366269-9a1166d0-19ce-4b86-a1ab-8cd94a507625.png">
 
