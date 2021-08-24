@@ -37,3 +37,7 @@ babies:
 
 
 - for deploying scripts, models and most deep learning applications, python is more powerful, since they are open source, both R and python have similar deep learning packages, like keras in R
+
+# Open CV
+- cv2 package for image analysis, 
+- 
