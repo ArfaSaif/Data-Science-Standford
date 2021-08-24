@@ -34,3 +34,6 @@ babies:
 - not every operations run on gpu and tpu, everything can run on cpu
 - need to reimplement - develop alogirhtms to be compatible on gpu and tpu
 - all packages are compatible with tpu, gpu, can train using these algorithms
+
+
+- for deploying scripts, models and most deep learning applications, python is more powerful, since they are open source, both R and python have similar deep learning packages, like keras in R
