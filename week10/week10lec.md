@@ -51,3 +51,6 @@ babies:
 - distanglement learning - 
 - 
 <img width="1388" alt="image" src="https://user-images.githubusercontent.com/48233453/130548455-38360cb2-8c91-45ee-8a7a-eefaeb760789.png">
+
+
+statquest is a good channel
