@@ -40,4 +40,14 @@ babies:
 
 # Open CV
 - cv2 package for image analysis, 
+
+
+# why choose machine learning vs deep learning
+- hyperparameter tunings
+- need labelled images
+- deep learning models are black boxes - hard to explain
+- not ready for productions - need to make improvements
+- future of AI is unsuperives - train models in unsupervised fashion: will see deep learning models only single or few images , that means labelling isnt going to be an issue
+- distanglement learning - 
 - 
+<img width="1388" alt="image" src="https://user-images.githubusercontent.com/48233453/130548455-38360cb2-8c91-45ee-8a7a-eefaeb760789.png">
