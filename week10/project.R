@@ -1,3 +1,24 @@
+
+
+
+# About the dataset
+# Life Expectancy dataset from (WHO)
+#  there have been lot of studies undertaken in the past on factors affecting life 
+# expectancy considering demographic variables, income composition and mortality rates.
+# 20 predicting variables. All predicting variables was then divided into several broad categories:
+# ​Immunization related factors, Mortality factors, Economical factors and Social factors.
+
+
+# Goal: will be doing multiple linear regression to find factors affecting life expectancy
+# while considering data from a period of 2000 to 2015 for all the countries.
+
+# Applications of this study: Since the observations this dataset are based on different countries, 
+# it will be easier for a country to determine the predicting factor which is contributing to lower 
+# value of life expectancy. This will help in suggesting a country which area should be given importance 
+# in order to efficiently improve the life expectancy of its population.
+
+
+
 library(ggplot2)
 library(caret)
 library(mlbench)
@@ -6,12 +27,14 @@ library(mlbench)
 
 # combine the data into one dataframe
 df = read.csv("Life Expectancy Data.csv")
+df <- df[complete.cases(df), ]
 # remove the rows with missing data
 
 
 # Q1: What are the predicting variables actually affecting the life expectancy?
-df <- df[complete.cases(df), ]
+
 meanAge = mean(df[["Life.expectancy"]])
+meanAge
 # 69 years
 
 
@@ -37,8 +60,10 @@ ggplot(df, aes(Income.composition.of.resources, Life.expectancy)) + geom_point(s
 
 ind=which(df$Income.composition.of.resources==0.000)
 ind
-temp=df[-ind,]
-ggplot(temp, aes(Income.composition.of.resources, Life.expectancy)) + geom_point(size = 2) +  ggtitle("Schooling vs Life Expectancy") +theme_bw()
+cleandf=df[-ind,]
+ggplot(cleandf, aes(Income.composition.of.resources, Life.expectancy)) + geom_point(size = 2) +  ggtitle("Schooling vs Life Expectancy") +theme_bw()
+cor(cleandf$Income.composition.of.resources, cleandf$Life.expectancy)
+# strong positive correlation = 0.8604497
 # positive linear correlation
 
 
@@ -46,12 +71,12 @@ ggplot(temp, aes(Income.composition.of.resources, Life.expectancy)) + geom_point
 # Does Life Expectancy have positive or negative relationship with drinking alcohol?
 # alcohol
 df <- df[complete.cases(df), ]
-ggplot(df, aes(Alcohol, Life.expectancy)) + geom_point(size = 2) +  ggtitle("Schooling vs Life Expectancy") +theme_bw()
+ggplot(df, aes(Alcohol, Life.expectancy)) + geom_point(size = 2) +  ggtitle("Alcohol vs Life Expectancy") +theme_bw()
+
 
 # Do densely populated countries tend to have lower life expectancy?
 
 
-df <- df[complete.cases(df), ]
 meanPop = mean(df[["Population"]])
 ind=which(df$Population<100000000)
 ind
@@ -63,3 +88,81 @@ meanAge = mean(temp2[["Life.expectancy"]])
 # What is the impact of Immunization coverage on life Expectancy?
 ggplot(df, aes(Hepatitis.B, Life.expectancy)) + geom_point(size = 2) +  ggtitle("Schooling vs Life Expectancy") +theme_bw()
 
+
+
+
+
+########
+
+
+# Training the model - linear regression
+ind=which(df$Income.composition.of.resources==0.000)
+ind
+cleandf=df[-ind,]
+
+training = cleandf[seq(1 , nrow(cleandf), 2), c("Life.expectancy","Income.composition.of.resources", "Schooling" )]
+
+test = cleandf[seq(2 , nrow(cleandf), 2), c("Life.expectancy","Income.composition.of.resources", "Schooling")]
+
+model = train(Life.expectancy~., training, method ="lm")
+
+model$finalModel
+
+predictedLE = predict(model, test)
+as.numeric(predictedLE)
+real = test$Life.expectancy
+MAE(predictedLE, test$Life.expectancy) 
+R2(predictedLE, test$Life.expectancy) 
+RMSE(predictedLE, test$Life.expectancy) 
+
+
+# Training the model - random forests
+
+training = cleandf[seq(1 , nrow(cleandf), 2), c("Life.expectancy","Income.composition.of.resources", "Schooling" )]
+
+test = cleandf[seq(2 , nrow(cleandf), 2), c("Life.expectancy","Income.composition.of.resources", "Schooling")]
+
+model = train(Life.expectancy~., training, method ="rf")
+
+model$finalModel
+
+predictedLE = predict(model, test)
+as.numeric(predictedLE)
+real = test$Life.expectancy
+MAE(predictedLE, test$Life.expectancy) 
+R2(predictedLE, test$Life.expectancy) 
+RMSE(predictedLE, test$Life.expectancy) 
+
+# Training the model - linear regression
+
+training = cleandf[seq(1 , nrow(cleandf), 2), c("Life.expectancy","Income.composition.of.resources", "Schooling" )]
+
+test = cleandf[seq(2 , nrow(cleandf), 2), c("Life.expectancy","Income.composition.of.resources", "Schooling")]
+
+model = train(Life.expectancy~., training, method ="bridge")
+
+model$finalModel
+
+predictedLE = predict(model, test)
+as.numeric(predictedLE)
+real = test$Life.expectancy
+MAE(predictedLE, test$Life.expectancy) 
+R2(predictedLE, test$Life.expectancy) 
+RMSE(predictedLE, test$Life.expectancy)
+
+# Training the model - linear regression
+
+training = cleandf[seq(1 , nrow(cleandf), 2), c("Life.expectancy","Income.composition.of.resources", "Schooling" )]
+
+test = cleandf[seq(2 , nrow(cleandf), 2), c("Life.expectancy","Income.composition.of.resources", "Schooling")]
+
+model = train(Life.expectancy~., training, method ="lasso")
+
+model$finalModel
+
+predictedLE = predict(model, test)
+as.numeric(predictedLE)
+real = test$Life.expectancy
+MAE(predictedLE, test$Life.expectancy) 
+R2(predictedLE, test$Life.expectancy) 
+RMSE(predictedLE, test$Life.expectancy) 
